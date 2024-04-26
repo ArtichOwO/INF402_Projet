@@ -1,6 +1,8 @@
+type x_lcv = int * int * int
+
 type var =
-	Var of int * int * int
-	| Not of int * int * int
+	Var of x_lcv
+	| Not of x_lcv
 
 type clause = var list
 
