@@ -3,7 +3,7 @@ open Logic
 type id = int
 type ids = x_lcv list
 
-let create_ids f =
+let ids f =
   let rec add_id vars l =
     match l with
     | Var c :: tl | Not c :: tl ->

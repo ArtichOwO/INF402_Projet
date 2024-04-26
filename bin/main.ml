@@ -15,7 +15,7 @@ let () =
     @ Rules.R6.cnf_of_board board
   in
   Logic.print_cnf cnf;
-  let ids = Var_id.create_ids cnf in
+  let ids = Var_id.ids cnf in
   Var_id.print_ids ids;
   Var_id.id_of_var (4, 1, 2) ids
   |> Option.get
