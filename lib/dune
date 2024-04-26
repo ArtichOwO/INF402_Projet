@@ -1,2 +1,3 @@
 (library
- (name INF402_Projet))
+ (name INF402_Projet)
+ (libraries camlp-streams))
