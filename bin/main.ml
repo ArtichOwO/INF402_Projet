@@ -19,4 +19,5 @@ let () =
   Var_id.print_ids ids;
   Var_id.id_of_var (4, 1, 2) ids
   |> Option.get
-  |> Printf.printf "(4, 1, 2) -> %i\n"
+  |> Printf.printf "(4, 1, 2) -> %i\n";
+  DIMACS.dimacs_of_cnf cnf |> DIMACS.string_of_dimacs |> print_endline
