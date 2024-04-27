@@ -2,9 +2,9 @@ module type Rule = sig
   val cnf_of_board : Sudoku.board -> Logic.cnf
 end
 
-module R1 : Rule (* 各マスには少なくとも1つの値がある *)
-module R2 : Rule (* 各マスには最大一つの値がある *)
-module R3 : Rule (* 各行には1からnまで全ての数字がある *)
-module R4 : Rule (* 各列には1からnまで全ての数字がある *)
-module R5 : Rule (* 各ブロックには1からnまで全ての数字がある *)
-module R6 : Rule (* 全てのマスに記入済み *)
+module R1 : Rule (* Toutes les cases ont au moins une valeur *)
+module R2 : Rule (* Toutes les cases ont au plus une valeur *)
+module R3 : Rule (* Chaque ligne possède toutes les valeurs de 1 à n *)
+module R4 : Rule (* Chaque colonne possède toutes les valeurs de 1 à n *)
+module R5 : Rule (* Chaque bloc possède toutes les valeurs de 1 à n *)
+module R6 : Rule (* Cases déjà remplies *)
