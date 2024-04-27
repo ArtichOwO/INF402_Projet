@@ -2,25 +2,18 @@
 
 (name INF402_Projet)
 
-(generate_opam_files true)
+(generate_opam_files false)
 
 (source
- (github username/reponame))
+ (github ArtichOwO/INF402_Projet))
 
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(authors "Hugo EXERTIER"
+         "Maxime FAURE-BONACCORSI" 
+         "Raed BEN CHEIKH" 
+         "Léo GRANGE")
 
 (package
  (name INF402_Projet)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+ (synopsis "Projet INF402")
+ (description "Génération de fichier DIMACS à partir d'une grille de sudoku.")
+ (depends ocaml dune camlp-streams))
