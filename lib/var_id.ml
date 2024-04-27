@@ -10,7 +10,7 @@ let ids f =
         if List.mem c vars then add_id vars tl else add_id (c :: vars) tl
     | _ -> vars
   in
-  List.flatten f |> add_id []
+  (0, 0, 0) :: add_id [] (List.flatten f)
 
 let id_of_var v = List.find_index @@ fun c -> c = v
 

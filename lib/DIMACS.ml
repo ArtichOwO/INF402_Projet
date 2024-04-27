@@ -5,13 +5,17 @@ type dimacs = { v_nb : int; c_nv : int; clauses : d_clause list }
 let dimacs_of_cnf cnf =
   let ids = Var_id.ids cnf in
   {
-    v_nb = List.length ids;
+    v_nb = List.length ids - 1;
     c_nv = List.length cnf;
     clauses =
       List.map
-        (List.map (function
-          | Logic.Var c -> Var_id.id_of_var c ids |> Option.get
-          | Logic.Not c -> -(Var_id.id_of_var c ids |> Option.get)))
+        (fun c ->
+          List.map
+            (function
+              | Logic.Var c -> Var_id.id_of_var c ids |> Option.get
+              | Logic.Not c -> -(Var_id.id_of_var c ids |> Option.get))
+            c
+          @ [ 0 ])
         cnf;
   }
 
