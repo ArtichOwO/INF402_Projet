@@ -2,7 +2,7 @@
 
 (name INF402_Projet)
 
-(generate_opam_files false)
+(generate_opam_files true)
 
 (source
  (github ArtichOwO/INF402_Projet))
@@ -11,6 +11,11 @@
          "Maxime FAURE-BONACCORSI" 
          "Raed BEN CHEIKH" 
          "Léo GRANGE")
+
+(maintainers "Hugo EXERTIER"
+             "Maxime FAURE-BONACCORSI" 
+             "Raed BEN CHEIKH" 
+             "Léo GRANGE")
 
 (package
  (name INF402_Projet)
