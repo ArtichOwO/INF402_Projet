@@ -1,2 +1,17 @@
-# Projet INF402
++---------------+
+| Projet INF402 |
++---------------+
 > Hugo EXERTIER, Maxime FAURE-BONACCORSI, Raed BEN CHEIKH, Léo GRANGE
+
+1) Installation & compilation
+
+Suivez les instructions dans le fichier `LISEZMOI.txt`.
+
+2) Exécution du programme
+
+La commande :
+$ <exécutable> <grille de sudoku.sdk>
+imprime le fichier au format DIMACS dans la console.
+Pour l'enregistrer dans un fichier, il suffit d'ajouter `> <fichier.cnf>`.
+
+Des exemples de grilles sont disponibles dans `/examples/`.
