@@ -1,0 +1,19 @@
++-----------------------------+
+| Instructions d'installation |
++-----------------------------+
+
+1) Prérequis
+
+- OPAM (https://opam.ocaml.org/)
+- Dune (https://dune.build/)
+
+Ensuite, installez les éventuelles dépendances :
+$ opam install --deps-only .
+
+2) Compilation
+
+Dans le dossier où se trouve le `dune-project`, exécutez les commandes suivantes :
+$ dune build
+$ ./_build/default/bin/main.exe <...>
+ou plus rapidement :
+$ dune exec bin/main.exe -- <...>
