@@ -10,6 +10,8 @@
 Ensuite, installez les éventuelles dépendances :
 $ opam install --deps-only .
 
+`clasp` (https://potassco.org/clasp/) peut être utilisé comme SAT-solveur.
+
 2) Compilation
 
 Dans le dossier où se trouve le `dune-project`, exécutez les commandes suivantes :
