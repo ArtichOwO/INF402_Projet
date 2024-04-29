@@ -15,3 +15,8 @@ imprime le fichier au format DIMACS dans la console.
 Pour l'enregistrer dans un fichier, il suffit d'ajouter `> <fichier.cnf>`.
 
 Des exemples de grilles sont disponibles dans `/examples/`.
+
+3) Test de la sortie DIMACS
+
+Il suffit de piper la sortie du programme dans un SAT-solveur comme `clasp` :
+$ <exécutable> <grille de sudoku.sdk> | clasp
