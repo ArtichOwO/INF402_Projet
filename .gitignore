@@ -3,3 +3,6 @@
 
 # eaucamelle
 _build/
+
+# cnf
+*.cnf
