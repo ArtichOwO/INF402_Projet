@@ -11,7 +11,7 @@ let board_of_string s =
     match Stream.next lexer with
     | Kwd "_" -> Empty
     | Int i -> Cell i
-    | _ -> Printf.sprintf "間違ったトークン (%i)" idx |> failwith )
+    | _ -> Printf.sprintf "Mauvais token (%i)" idx |> failwith )
 
 let print_board (n, b) =
   List.iteri

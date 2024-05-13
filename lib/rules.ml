@@ -43,7 +43,6 @@ module R5 : Rule = struct
   let cnf_of_board (n, _) =
     let sqrt_n = float_of_int n |> sqrt |> int_of_float in
     List.init n (fun idx_v ->
-        Printf.printf "--- V=%i --------\n" idx_v;
         List.init n (fun idx_b ->
             List.init n (fun idx_ij ->
                 Var
